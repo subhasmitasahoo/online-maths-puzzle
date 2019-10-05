@@ -1,2 +1,6 @@
-# Maths-Game-for-Kids-
-A game built using JS for kids - To solve maths puzzle
+# A Game for Kids using JavaScript
+
+<ul>
+  <li>Built using JS</li>
+  <li>To run locally: Clone the repo and open the index.html file in browser</li>
+</ul>
