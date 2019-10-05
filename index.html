@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="src.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <div class="flexDisplay">
+                    <p id="title">Let's Have Some Fun</p>
+                </div>
+                <div class="flexDisplay">
+                    <button class="dark-background-1" onclick="startTheGame()">Start</button>
+                </div>
+                <div class="flexDisplay">
+                    <button class="dark-background-1" disabled>
+                            <span id="timer">
+                                    <span id="timerVal">_</span>
+                                    <i class="material-icons" style="color:white;">timer</i>
+                            </span>
+                    </button>
+                    
+                </div>
+                <div class="flexDisplay">
+                    <button class="dark-background-1" onclick="resetTheGame()">Reset</button>
+                </div>
+            </div>
+            <div id="playGround">
+                <div id="equation" class="dark-background-1">
+                    <span class="content">
+                        <span id="firstVar">_</span>
+                        <span id="operator">_</span>
+                        <span id="secondVar">_</span>
+                        <span>=</span>
+                        <!-- <input type="text" id="res"> -->
+                    </span>
+                </div>
+                <div id="result">
+                        <div class="option flexDisplay" onclick="validateOption(this)"></div>
+                        <div class="option flexDisplay" onclick="validateOption(this)"></div>
+                        <div class="option flexDisplay" onclick="validateOption(this)"></div>
+                        <div class="option flexDisplay" onclick="validateOption(this)"></div>
+                        <div class="option flexDisplay" onclick="validateOption(this)"></div>
+                        <div class="option flexDisplay" onclick="validateOption(this)"></div>
+                </div>
+                
+            </div>
+            <div id="footer">
+                <div id="Success" class="flexDisplay footer-ele">
+                    <p>Success: <span id="successCount">0</span></p>
+                </div>
+                <div id="Failed" class="flexDisplay footer-ele">
+                    <p>Failed: <span id="failedCount">0</span></p>
+                </div>
+                <div id="Missed" class="flexDisplay footer-ele">
+                    <p>Missed: <span id="missedCount">0</span></p>
+                </div>
+                <div id="Total" class="flexDisplay footer-ele">
+                    <p>Total: <span id="totalCount">0</span></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
