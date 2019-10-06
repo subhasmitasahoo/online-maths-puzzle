@@ -1,4 +1,4 @@
-# A Game for Kids using JavaScript
+# online-maths-puzzle
 
 <ul>
   <li>Built using JS</li>
